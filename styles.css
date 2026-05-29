@@ -1,11 +1,13 @@
 :root {
-  --bg: #0f1724;
-  --card: #0b1220;
+  --bg: #0b1220;
+  --card: linear-gradient(180deg, rgba(10,14,20,0.85), rgba(6,8,12,0.6));
   --muted: #9aa4b2;
-  --accent: #7c5cff;
+  --accent-1: #7c5cff;
+  --accent-2: #5fb7ff;
   --glass: rgba(255, 255, 255, 0.04);
-  --radius: 12px;
-  --max: 920px;
+  --radius: 14px;
+  --max: 980px;
+  --mx: 0px; --my: 0px; --rx: 0deg; --ry: 0deg;
 }
 * {
   box-sizing: border-box;
@@ -25,7 +27,7 @@ body {
     Roboto,
     "Helvetica Neue",
     Arial;
-  background: linear-gradient(180deg, #071124 0%, #081423 100%);
+  background: radial-gradient(800px 400px at 10% 10%, rgba(124,92,255,0.12), transparent), linear-gradient(180deg,#06111b 0%, #071424 100%);
   color: #e6eef8;
   -webkit-font-smoothing: antialiased;
 }
@@ -54,7 +56,13 @@ body {
   top: 0;
   padding: 10px 0;
   z-index: 40;
-}
+.site-header {
+  backdrop-filter: blur(8px);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
+  position: sticky;
+  top: 0;
+  padding: 12px 0;
+  z-index: 60;
 .nav-list {
   display: flex;
   gap: 14px;
@@ -207,4 +215,13 @@ body {
   .brand .name {
     font-size: 0.95rem;
   }
+  /* mobile nav open state */
+  .nav-list.open {
+    display: block;
+    position: absolute;
+    right: 18px;
+    top: 60px;
+    background: linear-gradient(180deg, rgba(6,8,12,0.95), rgba(6,8,12,0.9));
+    padding: 12px;
+    border-radius: 10px;
 }

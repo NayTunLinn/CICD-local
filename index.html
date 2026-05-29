@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Firstname Lastname — Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <div class="name">Firstname Lastname</div>
+          <div class="role">Product Designer</div>
+        </div>
+        <nav class="nav">
+          <button
+            id="navToggle"
+            class="nav-toggle"
+            aria-label="Toggle navigation"
+          >
+            ☰
+          </button>
+          <ul class="nav-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container main">
+      <section class="hero card compact">
+        <h1>Compact, modern portfolio</h1>
+        <p class="lead">
+          I design clean interfaces and build delightful digital experiences.
+        </p>
+        <div class="cta-row">
+          <a class="btn" href="#projects">View projects</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+      </section>
+
+      <section id="about" class="card grid compact">
+        <div>
+          <h2>About</h2>
+          <p>
+            I'm a product designer focused on simple, usable interfaces. I enjoy
+            crafting compact UI with clear hierarchy and fast interactions.
+          </p>
+        </div>
+        <div>
+          <h3>Skills</h3>
+          <ul class="skills">
+            <li>UI / Visual Design</li>
+            <li>UX Research</li>
+            <li>Prototyping</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>Selected Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>Project One</h3>
+            <p>Minimal dashboard redesign for quicker tasks.</p>
+            <a class="link" href="#">Case study →</a>
+          </article>
+          <article class="project-card">
+            <h3>Project Two</h3>
+            <p>Mobile-first e-commerce UI with compact patterns.</p>
+            <a class="link" href="#">Case study →</a>
+          </article>
+          <article class="project-card">
+            <h3>Project Three</h3>
+            <p>Design system and tokenized components.</p>
+            <a class="link" href="#">Case study →</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="card compact">
+        <h2>Contact</h2>
+        <form id="contactForm" class="contact-form">
+          <input name="name" type="text" placeholder="Your name" required />
+          <input name="email" type="email" placeholder="Email" required />
+          <textarea name="message" rows="4" placeholder="Message"></textarea>
+          <div class="form-row">
+            <button class="btn" type="submit">Send</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2026 Firstname Lastname — Crafted for clarity</p>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
